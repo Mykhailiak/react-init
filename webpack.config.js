@@ -14,11 +14,17 @@ module.exports = {
     publicPath: '/static/'
   },
   module: {
-    loaders: [
+    rules: [
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        include: [path.resolve(__dirname, 'src')],
+        loaders: ['eslint-loader']
+      },
       {
         test: /\.js$/,
         include: [path.resolve(__dirname, 'src')],
-        loaders: ['react-hot-loader', 'babel-loader']
+        use: ['react-hot-loader', 'babel-loader']
       }
     ]
   },
