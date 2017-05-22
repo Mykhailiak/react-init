@@ -1,0 +1,17 @@
+{
+  "name": "react-init",
+  "version": "1.0.0",
+  "description": "React init project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Yura Mikhaylyak <ghost86421@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "2.5.1",
+    "webpack-dev-middleware": "1.10.2",
+    "webpack-hot-middleware": "2.18.0"
+  }
+}
